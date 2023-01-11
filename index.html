@@ -633,7 +633,7 @@
 
       	<div class="col-six tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright Nelson Evangelista 2021.</span> 
+		        	© Copyright Nelson Evangelista <span id="displayYear"></span>.
 		         </div>		                  
 	      	</div>
 
@@ -651,6 +651,13 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script>
+	var newDate = new Date();
+	newDate.setDate(newDate.getDate() + 1);
+
+	//year
+	document.getElementById('displayYear').innerHTML = newDate.getFullYear();	
+   </script>
 
 </body>
 
